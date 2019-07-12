@@ -21,6 +21,8 @@ $ python main.py -content_path 'content_example.jpg' -style_path 'style_example.
 ```
 
 ## Results
+![Example image Derrick Rose](assets/derrick_rose.jpg)
+
 ![Example image mountains](assets/mountains.jpg)
 
 ![Example image meadow](assets/meadow.jpg)
