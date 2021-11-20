@@ -30,12 +30,13 @@ from absl import flags
 from tensorflow import linalg
 from tensorflow.python.keras import applications
 from tensorflow.python.keras import models
+from tensorflow.python.keras.applications.vgg19 import VGG19
 
 FLAGS = flags.FLAGS
 
 
 def get_vgg_layers(layer_names):
-    vgg = applications.VGG19(include_top=False, weights='imagenet')
+    vgg = VGG19(include_top=False, weights='imagenet')
     vgg.trainable = False
     outputs = [vgg.get_layer(name).output for name in layer_names]
     model = models.Model([vgg.input], outputs)
