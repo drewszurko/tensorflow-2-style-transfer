@@ -1,5 +1,5 @@
 absl-py
-tensorflow-gpu==2.5.1
+tensorflow-gpu==2.5.3
 tfds-nightly
 numpy
 tqdm
